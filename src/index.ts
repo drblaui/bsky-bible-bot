@@ -24,6 +24,7 @@ getMentions().then(async (mentions) => {
 		}
 		
 		let post = await getPost(parentUri);
+		if(post == null) continue;
 		let occurrences = count(post.text);
 		let text = "";
 
