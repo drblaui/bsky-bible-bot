@@ -47,5 +47,5 @@ getMentions().then(async (mentions) => {
 	}
 	if(mentions[0] !== undefined) {
 		await setLastId(mentions[0].cid);
-	)
+	}
 });
